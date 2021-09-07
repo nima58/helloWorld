@@ -1,0 +1,21 @@
+fieldset {
+    border-color:  #7f54c4;
+    border-style: solid;
+    border-width: 7px;
+}
+textarea, input {
+    border-radius: 7px;
+    border-color: #7f54c4;
+}
+
+label {
+    display: block;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}

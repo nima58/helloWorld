@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <H1>Contact Us</H1>
+    <form action="contact.html" method="GET">
+        <fieldset>
+            <legend><strong> Contact Information</strong></legend>
+            Your prefered language: <select>
+                <optgroup label="Latin">
+                    <option>French</option>
+                    <option>Spanish</option>
+                </optgroup>
+                <optgroup label="German">
+                    <option>English</option>
+                    <option>Swedish</option>
+                    <option>German</option>
+                </optgroup>
+            </select></br>
+            <label for="nameField">Name</label>
+            Name: <input type="text" name="nameField" required id="nameField"></br></br>
+            <label> Your Age : <input tabindex="1" type="number" name="CustomerAge"></label></br></br>
+            <label> Your Email: <input tabindex="2" type="email" name="CustomerEmail"></label></br></br>
+            <label>  Your Phone: <input tabindex="3"  type="tel" name="CustomerPhone"></label>
+            <input tabindex="4"  type="radio" name="phoneType" value="cell">cell
+            <input tabindex="5" type="radio" name="phoneType" value="cell">home
+            <input tabindex="6" type="radio" name="phoneType" value="cell">work<br>
+            Ok to contact <input type="checkbox" name="okToContact" value="email"> By email
+            <input type="checkbox" name="okToContact" value="phone"> By phone</br>
+        </fieldset></br>
+        <fieldset>
+            <legend><strong>Feedback</strong></legend>
+            <textarea name="feedback" cols="40" rows="5"></textarea></br></br>
+            <label>Issue Date: <input type="date" name="IssueDate"></label></br></br>
+            <label>Issue Time: <input type="time" name="IssueTime"></label></br></br>
+            <input type="hidden" name="source" value="ContactForm">
+            <label>Severity Range: <input type="range" min="1" max="5" name="SeverityRange"></label></br></br>
+            <label>Severity: <input type="number" min="1" max="5" name="Severity"></label></br></br>
+
+            
+        </fieldset></br>
+        <input type="submit" value="SendContact">
+    </form>
+</body>
+
+</html>
